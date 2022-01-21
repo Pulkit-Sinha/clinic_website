@@ -10,15 +10,20 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/home';
-
+import BookAppointment from './components/bookAppointment';
+import Contact from './components/contact';
+import Location from './components/location';
 
 function App() {
   return (
       <Router>
-      <Header />
         <div>
           <Routes>
-            <Route path='./components/home' element={<Home />} >
+            <Route path="/" element={<Header />} >
+              <Route index element={<Home />} />
+              <Route path="bookAppointment" element = {<BookAppointment />} />
+              <Route path="clinicLocator" element = {<Location />} />
+              <Route path="contactUs" element = {<Contact />} />
             </Route>
           </Routes>
         </div>
