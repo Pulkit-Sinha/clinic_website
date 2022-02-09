@@ -16,7 +16,7 @@ function Header() {
             <Nav className="ms-auto">
               <Nav.Link><FaHome /><Link to="/" style={{ textDecoration: 'none', color: 'grey' }}> Home</Link> </Nav.Link>
               <Nav.Link><FaRegCalendarAlt /><Link to="/bookAppointment" style={{ textDecoration: 'none', color: 'grey' }}> Book Appointment</Link> </Nav.Link>
-              <Nav.Link><FaMapMarkerAlt /><Link to="/clinicLocator" style={{ textDecoration: 'none', color: 'grey' }}> Clinic Locator</Link> </Nav.Link>
+              {/* <Nav.Link><FaMapMarkerAlt /><Link to="/clinicLocator" style={{ textDecoration: 'none', color: 'grey' }}> Clinic Locator</Link> </Nav.Link> */}
               <Nav.Link><FaPhoneAlt /><Link to="/contactUs" style={{ textDecoration: 'none', color: 'grey' }}> Contact Us</Link> </Nav.Link>
             </Nav>
           </Navbar.Collapse>
